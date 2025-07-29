@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 
 const Chat = () => {
-  const socket=useMemo(()=>io("http://localhost:3000"),[]);
+  const socket=useMemo(()=>io("https://back-ypmb.onrender.com"),[]);
 
   useEffect(()=>{
     socket.on("receive_message",(data)=>{
